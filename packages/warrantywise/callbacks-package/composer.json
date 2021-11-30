@@ -1,0 +1,23 @@
+{
+    "name": "warrantywise/callbacks-package",
+    "description": "callback functionality",
+    "authors": [
+        {
+            "name": "Warrantywise"
+        }
+    ],
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Callbacks\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Callbacks\\CallbacksServiceProvider"
+            ]
+        }
+    }
+}

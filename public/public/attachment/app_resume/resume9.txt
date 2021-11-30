@@ -1,0 +1,151 @@
+fetEnquiry();
+           function fetEnquiry()
+           {
+
+               $.ajax({
+                   type: 'GET',
+                   url: '{{ route('dashboard_show') }}',
+                   datatype:'json',
+                   success:function(response){
+                       var trHTML = '';
+
+                       $.each(response.enq, function( key, item ) {
+                           var myStr=item.created_at;
+                           var strArray = myStr.split(".");
+                           var amount=item.vehicle_enquiry.retail_value;
+                           var price = amount.split(".");
+                           var url = '{{ route("enquiry_show", ":id") }}';
+                           url = url.replace(':id', item.id);
+                           if(item.status == '1'){
+                               var staus = '<td class="d-none d-sm-table-cell"> <span class="font-w500  text-success">' + "Approved" + '</span></td>';
+
+                           }else if(item.status == '2'){
+
+                               var staus = '<td class="d-none d-sm-table-cell"> <span class="font-w500  text-warning">' + "Pending" + '</span></td>';
+
+                           }else{
+
+                               var staus = '<td class="d-none d-sm-table-cell"> <span class="font-w500  text-danger">' + "Cancel" + '</span></td>';
+                           }
+                               trHTML +=
+                                   '<tr><td><span class="font-w600">'
+                                   + item.vehicle_enquiry.registration
+                                   + '</span></td>' +
+                                   '<td>' + strArray[0] + '</td>'+
+                                    staus +
+                                   '<td class="d-none d-sm-table-cell text-right font-w500">£'
+                                   + price[0]
+                                   +'</td><td class="text-center text-nowrap font-w500"><a href="'+url+'">'
+                                   +"view"
+                                   + '</a></td></tr>'
+
+
+
+
+
+                       });
+                       $('#tBody').append(trHTML);
+
+
+
+                   }
+
+
+               });
+
+           }
+
+
+
+ + '<div class="modal fade" id="modal-block-slideup-'+item.id+'" tabindex="-1" role="dialog" aria-labelledby="modal-block-slideup" aria-hidden="true">'
+                             +   '<div class="modal-dialog modal-dialog-slideup" role="document">'
+                              +      '<div class="modal-content">'
+                               +         '<div class="block block-themed block-transparent">'
+                                +            '<div class="block-content text-center">'
+                                 +               '<i class="fas fa-times del-pop-icon"></i>'
+                                  +              '<h3>'+"Are you sure?"+'</h3>'
+                                   +             '<p class="text-center">Do you really want to delete this enquiry? This process cannot be undone</p>'
+
+
+                                        +        '<a class="btn btn-sm btn-primary" href="">YES</a>'
+
+                                         +       '<button type="button" class="btn btn-sm btn-light" data-dismiss="modal">No</button>'
+                                         +   '</div></div></div></div></div>'
+
+
+
+
+
++  '<div class="modal fade" id="modal-block-slideup" tabindex="-1" role="dialog" aria-labelledby="modal-block-slideup" aria-hidden="true">'
+                            +  '<div class="modal-dialog modal-dialog-slideup" role="document">'
+                            +  '<div class="modal-content">'
+                            +  '<div class="block block-themed block-transparent">'
+                            +  '<div class="block-content text-center">'
+                            +  '<i class="fas fa-times del-pop-icon"></i>'
+                            +  '<h3>Are you sure?</h3>'
+                            +  '<p class="text-center">Do you really want to delete this enquiry? This process cannot be undone</p>'
+                            +  '<a class="btn btn-sm btn-primary" href="">YES</a>'
+                            +  '<button type="button" class="btn btn-sm btn-light" data-dismiss="modal">No</button>'
+                            +   '</div>' +
+                            +  '</div>' +
+                            +  '</div>' +
+                            +  '</div>' +
+                            +  '</div>'
+Write code for Spa consisting on three tables use vue.js for frontend and laravel at backend. 
+Make CRUD for three tables with product info and image gallery. 
+Use any auth system for authentication and APIs.
+ 
+
+<script>
+    //    $(document).ready(function() {
+
+    //        $(document).on('click', '.pagination a', function (event) {
+    //            event.preventDefault();
+    //            var page = $(this).attr('href').split('page=')[1];
+    //            fetch_pending_enq(page)
+    //        });
+
+         //   function fetch_pending_enq(page)
+         //   {
+         //       $.ajax({
+         //           url:"enq_filter?page="+page,
+         //           method:'post',
+         //           success:function(data)
+         //           {
+         //               console.log(data);
+         //               $('.table-responsive').empty().html(data);
+         //               //  $('#documentsTable').find('tbody').append(data);
+         //           }
+         //       });
+          //  }
+
+       // });
+
+
+
+    </script>
+
+
+
+  // $us = DB::table("enquiries")
+        //     ->whereDate('created_at', '>', Carbon::now()->subDays(9))
+        //     ->get();
+        // dd($us);
+      
+
+
+git add.
+git commit -m
+git push origin bcrud
+
+
+
+laravel echo
+laravel livewire
+laravel vuejs chatting system
+vuejs transition
+aws s3
+
+
+
+a:23:{i:0;s:60:"cf7-conditional-fields/contact-form-7-conditional-fields.php";i:1;s:23:"chatbot/qcld-wpwbot.php";i:2;s:36:"contact-form-7/wp-contact-form-7.php";i:3;s:43:"conversational-forms/qcformbuilder-core.php";i:4;s:17:"ctcore/ctcore.php";i:5;s:72:"different-menus-in-different-pages/different-menus-in-different-page.php";i:6;s:32:"duplicate-page/duplicatepage.php";i:7;s:47:"easy-facebook-likebox/easy-facebook-likebox.php";i:8;s:42:"hummingbird-performance/wp-hummingbird.php";i:9;s:27:"js_composer/js_composer.php";i:10;s:35:"litespeed-cache/litespeed-cache.php";i:11;s:21:"megamenu/megamenu.php";i:12;s:21:"newsletter/plugin.php";i:13;s:35:"redux-framework/redux-framework.php";i:14;s:23:"revslider/revslider.php";i:15;s:27:"woocommerce/woocommerce.php";i:16;s:41:"wordpress-importer/wordpress-importer.php";i:17;s:24:"wordpress-seo/wp-seo.php";i:18;s:25:"wp-chatbot/wp-chatbot.php";i:19;s:39:"wp-file-manager/file_folder_manager.php";i:20;s:53:"xatkit-chatbot-connector/xatkit-chatbot-connector.php";i:21;s:36:"yith-woocommerce-quick-view/init.php";i:22;s:34:"yith-woocommerce-wishlist/init.php";}

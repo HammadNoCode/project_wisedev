@@ -1,0 +1,329 @@
+//
+// Custom Main
+//
+// Add your own styles or override existing ones
+//
+// This file is included last, so you have access
+// to all Bootstrap and Dashmix functions/mixins/styles etc
+// --------------------------------------------------
+
+// If you have many custom styles, you can create and import additional files
+// For example you can create _component1.scss and include it as follows:
+// @import 'component1';
+
+@media (min-width: 1200px) {
+    #page-container.main-content-narrow > #page-header .content-header, 
+    #page-container.main-content-narrow > #page-header .content, 
+    #page-container.main-content-narrow > #main-container .content, 
+    #page-container.main-content-narrow > #page-footer .content {
+        width: 85%;
+    }
+}
+
+.nav-main-item.open > .nav-main-link-submenu {
+    color: #000;
+    background-color: transparent;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.nav-main-submenu {
+    padding-left: 2.5rem;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border-bottom-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.nav-main-submenu .nav-main-link.active, .nav-main-submenu .nav-main-link:hover {
+    color: #bacff5;
+}
+
+.content-full {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.75rem 3rem 1px;
+    overflow-x: visible;
+}
+
+.bg-light {
+    background-color: #f8f9fc !important
+}
+
+.display-4 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.table {
+    margin-bottom: 0rem;
+}
+
+.tile-color {
+    border-top: 5px solid #e1b65a;
+}
+
+.table .thead-light th {
+    color: #fff !important;
+    background-color: #164192 !important;
+    border-color: #164192 !important;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #e1b65a !important;
+    border-radius: 0px !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    background-color: transparent !important;
+}
+
+.nav-tabs-alt .nav-link {
+    color: #000 !important;
+    padding-bottom: 0.35rem !important;
+    padding-top: 0.35rem !important;
+    font-size: 1.1rem;
+}
+
+.nav-tabs {
+    border: none !important;
+}
+
+.nav-tabs-alt .nav-link:hover,
+.nav-tabs-alt .nav-link:focus {
+    box-shadow: inset 0 -2px #000 !important;
+}
+
+.nav-link {
+    padding: 0.5rem 1.5rem !important;
+}
+
+.nav-tabs-alt .nav-item.show .nav-link,
+.nav-tabs-alt .nav-link.active {
+    color: #e1b65a;
+    background-color: #dae0e5;
+    border-color: transparent;
+    box-shadow: inset 0 -2px #000 !important;
+}
+
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
+    color: #ffffff;
+    background-color: #154191;
+    border-color: #154191;
+}
+
+.btn-light[data-v-67246f9e]:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active[data-v-67246f9e], .show > .btn-light.dropdown-toggle[data-v-67246f9e] {
+    color: #ffffff !important;
+    border-color: transparent !important;
+}
+
+.btn-sty {
+    width: 145px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+:focus {
+    outline:none; 
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #495057;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn:focus, .btn.focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 425px) {
+    #sidebar {
+        width: 55% !important;
+    }
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.input-group>.input-group-prepend>.btn,
+.input-group>.input-group-prepend>.input-group-text,
+.input-group>.input-group-append:not(:last-child)>.btn,
+.input-group>.input-group-append:not(:last-child)>.input-group-text,
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+.input-group>.input-group-append:last-child>.input-group-text:not(:last-child) {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.bg-black-75 {
+    background-color: hsl(219, 75%, 33%, 95%) !important;
+}
+
+.bg-light-75 {
+    background-color: rgba(248, 249, 252, 0.95) !important;
+}
+
+.bg-image {
+    background-image: url("/media/photos/photo18@2x.jpg");
+    background-repeat: no-repeat;
+}
+
+.form-control.form-control-alt:focus {
+    border-color: transparent;
+    background-color: transparent !important;
+    box-shadow: none;
+    border-radius: 0px !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.vue-calendar {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    background: #fff;
+    margin: 0 auto;
+    }
+
+.calendar-header {
+    align-items: center;
+}
+
+.header-left,
+.header-right {
+    flex: 1;
+}
+
+.header-center {
+    flex: 3;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.title {
+    margin: 0 5px;
+}
+
+.next-month {
+    content: "Next Month";
+    padding-left: 15px;
+}
+
+.prev-month {
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-rows: 5% 95%;
+}
+
+.days-header {
+    display: grid;
+    grid-auto-columns: 14.3%;
+    grid-template-areas: "a a a a a a a";
+}
+
+.days-body {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.day-number {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.day-label {
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    background-color: #164192;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.week-row {
+    display: grid;
+    grid-template-areas: "a a a a a a a";
+    grid-auto-columns: 14.3%;
+}
+
+.week-day {
+    padding: 4px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.week-day.disabled {
+    background-color: #f5f5f5;
+}
+
+.week-day.not-current>.day-number {
+    color: #c3c3c3;
+}
+
+.week-day.today>.day-number {
+    font-weight: 700;
+    color: red;
+}
+
+.events {
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 0 0 4px;
+}
+
+.events .event {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 4px 2px 0;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #d4dcec;
+}
+
+.events .more-link {
+    color: rgba(0, 0, 0, 0.38);
+}
+
+// Modal backdrop
+.backdrop-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+// Class bindings
+.driver {
+    background-color: #90ee90;
+  }
+.leadfoot {
+    background-color: #ff7f7f;
+}
+.excellent {
+    background-color: #90ee90;
+}
+.ok {
+    background-color: #eee8aa;
+}
+.poor {
+    background-color: #ff7f7f;
+}
+.favourite {
+    color: gold;
+}
+.limit {
+    color: #e04f1a;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.remaining {
+    color: #82b54b;
+    font-weight: 900;
+    text-decoration: underline;
+}
